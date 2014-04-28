@@ -1,0 +1,8 @@
+ERROR - 2013-10-26 20:11:43 --> Severity: Notice  --> iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string Y:\home\localhost\www\Meetings_site\system\core\Utf8.php 89
+ERROR - 2013-10-26 20:59:27 --> Severity: Notice  --> iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string Y:\home\localhost\www\Meetings_site\system\core\Utf8.php 89
+ERROR - 2013-10-26 21:01:48 --> Severity: Notice  --> iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string Y:\home\localhost\www\Meetings_site\system\core\Utf8.php 89
+ERROR - 2013-10-26 21:11:57 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away Y:\home\localhost\www\Meetings_site\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 21:12:13 --> Severity: Notice  --> iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string Y:\home\localhost\www\Meetings_site\system\core\Utf8.php 89
+ERROR - 2013-10-26 21:16:52 --> 404 Page Not Found --> testCharacters
+ERROR - 2013-10-26 21:17:20 --> Severity: Notice  --> iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an incomplete multibyte character in input string Y:\home\localhost\www\Meetings_site\system\core\Utf8.php 89
+ERROR - 2013-10-26 21:44:54 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away Y:\home\localhost\www\Meetings_site\system\database\drivers\mysql\mysql_driver.php 91

@@ -1,0 +1,9 @@
+php_flag display_errors on
+RewriteEngine on
+RewriteCond $1 !^(index\.php|img|images|css|js|avatars|avatars_m|qrimages_temp|assets|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+php_value mbstring.language "Russian"
+php_value mbstring.http_input "auto"
+php_value mbstring.http_output "cp1251"
+php_value mbstring.encoding_translation "On"

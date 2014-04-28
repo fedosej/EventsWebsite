@@ -1,0 +1,648 @@
+
+
+/*----------------------------CLASSES---------------------*/
+
+.header_title, .footer_title {
+		
+	color: #fff;
+	font-weight: bold;
+	font-family: arial;
+	background-color:#999;
+	overflow: hidden;
+}
+
+.header_title_float{
+	float:left;
+	margin: 10px;
+}
+
+.footer_title {
+	font-size: 10px;
+	padding:2px;
+	text-align: right;
+}
+
+.header_title {
+	font-size: 22px;
+	padding: 15px;
+}
+
+.header_menu, .footer_menu{
+			
+	/*box model*/
+	background-color:#666;
+	padding: 5px;
+	overflow: hidden;
+
+
+}
+
+.header_menu .item_left{
+	font-size: 22px;
+}
+
+.footer_menu .item_left{
+	font-size: 18px;
+}
+
+.header_item_menu_left{
+	float: left;
+}
+
+
+.header_item_menu_right {
+	float: right;
+}
+
+.item_left {
+	/*text*/
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: arial;
+	cursor: pointer;
+	
+	/*box model*/
+	background-color: #333;
+	padding: 5px;
+	margin: 0 5px 0 5px;
+	float: left;
+	
+}
+
+
+
+.item_right {
+	/*text*/
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: arial;
+	cursor: pointer;
+	
+	/*box model*/
+	background-color: #333;
+	padding: 5px;
+	margin: 0 5px 0 5px;
+	float: right;
+	
+}
+
+
+.bodyblock{
+	background-color: #eee;
+	
+}
+
+
+.page_content{
+
+	/*box model*/
+	
+	/*padding: 10px;*/
+	margin: 0 auto;
+	display: table;
+	
+}
+
+
+
+
+.meetings_block{
+	color: #444;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #ddd;
+	padding: 5px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.meetings_block_actions #participate, #cancel_participation{
+	width: 180px;
+}
+
+
+.blocks_container{
+	overflow:hidden;
+	margin: 0 auto;
+	padding: 5pz 5px 0 5px;
+	/*width:1100px;*/
+}
+
+
+
+
+
+
+
+.meetings_block_content{
+	width:300px;
+	float:left;
+}
+
+.meetings_block_link{
+	float:right;
+}
+
+
+
+
+
+
+
+.dates, .times_title, .times, .field_desc, .date_cont{
+	
+	float: left;
+}
+
+
+.field_desc{
+	padding:5px;
+	font-size:10px;
+}
+
+
+
+
+
+
+.autocomplete_time_hidden, .autocomplete_time_hidden_from, .autocomplete_time_hidden_to {
+		display:none; 
+		background:#fff; 
+		width: 60px;
+		height: 200px;
+		overflow: auto;
+		position: absolute; 
+		/*margin-left: 350px;*/
+
+}
+
+.unvisible{
+	display:none
+}
+
+.visible{
+		display:block; 
+}
+
+.hover{
+	background-color: #ddd;
+}
+
+
+
+.ajax_message{
+	color: #0f0;
+}
+
+
+.info_title{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.info{
+	overflow: hidden;
+}
+
+.info_data, .info_avatar{
+	margin: 10px;
+	float: left;
+}
+
+
+.error{
+	font-size: 12px;
+	font-family: Arial;
+	font-style: italic;
+	color:#f00;
+}
+
+
+
+.tabs{
+	margin: 0px auto;
+	width: 1100px;
+}
+.tab_link{
+	
+	margin: 10px 10px 10px 0px; 
+	padding: 0px 5px 0px 0px; 
+	font-size: 16px;
+	font-weight: bold;
+	color: #00f;
+	
+}
+
+
+.middleblock {
+	max-width: 500px;
+	margin: 0 auto; 
+}
+
+
+.clear_date{
+	font-size:12px;
+	color: #00f;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.meeting_cell_list{
+	/*width: 700px;*/
+	float: left;
+
+}
+
+.meeting_row_list{
+	background-color: #DDDDDD;
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	overflow: hidden;
+}
+
+
+.meetings_block_actions{
+	padding: 20px 0 20px 0	;
+}
+
+
+.meetings_headers{
+	font-style: italic;
+	font-weight: bold;
+	width: 100px;
+	
+	
+}
+
+.md_value{
+	margin: 0 0 0 10px;
+}
+
+
+.meetings_headers, .md_value, .edit_icon{
+	float: left;
+}
+
+
+.edit_icon{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.edit_icon img{
+	height: 100%;
+	width: 100%;
+}
+
+.md_block{
+	overflow: hidden;
+	font-size: 16px;
+}
+
+
+.main_recent_meeting{
+	margin: 5px 5px 5px 5px;
+	padding: 10px;
+	background-color: #ddd;
+	float: left;
+
+}
+
+
+.main_page_meetings_block{
+	overflow: hidden;
+	width: 500px;
+	margin: 0 auto;
+
+}
+
+
+.meetings_filter_results tr td{
+	padding: 10px;
+	font-size: 16px;
+	/*border: 1px solid #000;*/
+}
+
+
+
+.meeting_cell_list_left{
+	margin: 0 0 0 10px;
+	float: left;
+}
+
+.meeting_cell_list_right{
+	float: right;
+}
+
+
+.meeting_avatar{
+	float: left;
+	width: 150px;
+}
+
+.meeting_avatar img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.meeting_link, .participators_link{
+	color: #00f;
+	cursor:pointer;
+	
+}
+
+.meeting_link{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.meeting_dates, .meeting_location{
+	font-weight: normal;
+	font-size: 12px;
+	color: #00f;
+}
+
+.res_info{
+	width:350px;
+	margin: 25px auto;
+	padding:10px;
+
+	font-weight: bold;
+	font-size: 18px
+}
+
+
+
+.first_page_meeting_container{
+	overflow: hidden;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.first_page_meeting{
+	float: left;
+	height: 200px;
+	margin: 0 10px 0 0;
+	background-color: #ddd;
+	padding: 10px;
+	
+}
+
+
+
+.first_page_meeting_image{
+	height: 150px;
+}
+
+.first_page_meeting_image img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.first_page_meeting_link{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+.recover_pass{
+	width: 300px;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 15px 0 30px 0px;
+}
+
+
+.WrongPassBlock, .message_sent {
+	font-size:14px;
+	font-weight:bold;
+	margin: 0 0 20px 0;
+}
+
+.WrongPassBlock{
+	color: #f00;
+}
+
+.message_sent{
+	color: #0f0;
+}
+
+
+.updatePass{
+	font-size:14px;
+	font-weight:bold;
+	margin: 20px 0 20px 0;
+	
+}
+
+
+
+
+/*-----------------------IDs------------------------------*/
+
+
+#main_pic {
+	margin: 0 auto;
+	width: 182px;
+}
+
+
+#meeting_time{
+	width: 50px;
+}
+
+#create_meeting_table tr td, #profile_table tr td,{
+	padding: 5px;
+}
+
+
+#meeting_starttime, #meeting_endtime{
+	width: 50px;	
+}
+
+#quick_search_filter{
+	margin: 0 auto;
+	width: 300px;
+}
+
+#quick_search_filter input{
+	margin: 10px auto;
+	width: 300px;
+}
+
+#quick_search_button{
+
+}
+
+
+
+
+#about{
+	padding: 5px 30px 5px 30px;
+}
+
+
+
+#reg_participator, #cancel_participator{
+	width: 200px;
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------FORM LOGIN--------------------------------------*/
+.btn_div{
+	width: 200px;
+	margin: 10px auto;
+}
+.main_page_button{
+
+}
+
+
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control, .form-signin button {
+	  width: 300px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+/*--------------------FORM REGISTRATION--------------------------------------*/
+
+.form-reg{
+	/*width: 800px;*/
+}
+
+
+.reg_submit, .reg_reset{
+	width: 200px;
+	margin: 10px;
+}
+
+/*--------------------FORM PROFILE--------------------------------------*/
+
+.form-prof{
+	width: 800px;
+}
+
+
+.prof_submit, .prof_back{
+	width: 200px;
+	margin: 10px;
+}
+
+
+.prof_img_avatar{
+	margin: 10px;
+
+}
+
+
+
+
+/*--------------------FORM CREATE MEETING--------------------------------------*/
+
+.form-newmeet{
+	/*width: 800px;*/
+}
+
+
+.newmeet_submit, .newmeet_reset{
+	width: 200px;
+	margin: 10px;
+}
+
+
+/*--------------------FORM LIST OF MEETING--------------------------------------*/
+
+.form-listofmeet{
+	width: 700px;
+  	padding: 5px;
+  	margin: 0 auto;
+}
+
+.listofmeet_buttons{
+	overflow:hidden;
+}
+
+.listofmeet_submit, .listofmeet_reset{
+	width: 200px;
+	margin: 10px;
+	float:left;
+}
+
+
+/*---------------FORM REQUEST NEW PASS-----------------------------------*/
+
+
+#pass_request  input[name=request_email]{
+	margin: 10px 0 10px 0;
+}
+
+#pass_request .request_submit_block{
+	width: 250px;
+	margin:10px auto
+}
+
+
+
+/*--------FORM RESET PASSWORD--------*/
+
+#updatepass input {
+	margin:  15px 0 15px 0;
+}
+
+#updatepass button{
+	margin:  0px 0 15px 0;
+}
+
+

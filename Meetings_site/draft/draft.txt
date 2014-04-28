@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="<?=base_url().'css/main_style.css'?>"/>
+	<link rel="stylesheet" type="text/css" href="<?=base_url().'css/jquery-ui.css'?>"/>
+	
+	<script src="<?=base_url().'js/jquery.js'?>"></script>
+	<script src="<?=base_url().'js/jquery-ui.js'?>"></script>	
+	<script src="<?=base_url().'js/participation.js'?>"></script>	
+
+
+
+
+
+	<title>Meeting details</title>
+	
+
+
+</head>
+<body>
+
+
+	<!-- Hiddens common inputs -->
+	<input type="hidden" id="base_url" name="base_url" value="<?=base_url()?>">
+	<?php //if(isset($data['m_id'])):?>
+	<input type="hidden" id="meeting_ID" name="meeting_ID" value="<?=$data['m_id']?>">
+	<?php //endif;?>
+
+<div class="small_page_content">
+	<?php //print_r($data)?>
+
+	<div class="meetings_block_small">
+					<!--  -->
+					<?php if(isset($data['m_summary'])):?>
+						What: <?=$data['m_summary']?><br>
+					<?php// endif;?>
+
+					<?php// if(isset($data['u_lastname']) && isset($data['u_firstname'])):?>	
+						Organizer: <?=$data['u_lastname']; echo " ".$data['u_firstname']?><br>
+					<?php// endif;?>
+						
+					<?php// if(isset($data['m_date'])):?>
+						When: <?=$data['m_date']?><br>
+					<?php// endif;?>	
+						
+					<?php// if(isset($data['m_location'])):?>	
+						Where: <?=$data['m_location']?><br>
+					<?php// endif;?>	
+
+					<?php// if(isset($data['m_desc'])):?>	
+						About: <?=$data['m_desc']?> <br>
+					<?php// endif;?>	
+
+
+	</div>
+
+
+	<!------detect if user is logged-------->
+
+	<?php if(isset($this->session->userdata['u_id'])):?>
+		<input type="hidden" id="user_ID" name="user_ID" value="<?=$this->session->userdata['u_id']?>">
+
+		<?php if($participated==false):?>
+			<div class="meetings_block_actions">
+				You can participate on this meeting<br>
+				<input id="participate" type="button" value="Participate"/>
+
+			</div>
+		<?php elseif($participated==true):?>
+			<div class="meetings_block_actions">
+				You already participated on this meeting!<br>
+				<input id="cancel_participation" type="button" value="Cancel participation"/>
+			</div>
+
+		<?php endif;?>
+		
+	<?php endif;?>
+
+
+
+</div>
+
+</body>
+
+</html>
